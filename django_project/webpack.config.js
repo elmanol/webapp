@@ -13,48 +13,48 @@ module.exports = {
   },
   module: {
         rules: [
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                loader: "babel-loader",
-                options: {
-                    presets: ["@babel/preset-env", "@babel/preset-react", {
-                        'plugins': ['@babel/plugin-proposal-class-properties']
-                    }]
-                }
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
-            },
-            {
-                test: [/\.(woff|eot|mp4)$/, /favicon-16x16\.png$/],
-                type: 'asset/resource',
-                generator: {
-                    filename: '[name][ext]'
-                }
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    // Creates `style` nodes from JS strings
-                    "style-loader",
-                    // Translates CSS into CommonJS
-                    "css-loader",
-                    // Compiles Sass to CSS
-                    "sass-loader",
-                ],
-            },
-            {
-                test: /\.(jpe?g|gif|png|svg)$/i,
-                loader: 'url-loader',
-                options: {
-                    limit: 25000,
-                },
-            }
+            // {
+            //     test: /\.(js|jsx)$/,
+            //     exclude: /node_modules/,
+            //     loader: "babel-loader",
+            //     options: {
+            //         presets: ["@babel/preset-env", "@babel/preset-react", {
+            //             'plugins': ['@babel/plugin-proposal-class-properties']
+            //         }]
+            //     }
+            // },
+            // {
+            //     test: /\.css$/,
+            //     use: [
+            //         'style-loader',
+            //         'css-loader'
+            //     ]
+            // },
+            // {
+            //     test: [/\.(woff|eot|mp4)$/, /favicon-16x16\.png$/],
+            //     type: 'asset/resource',
+            //     generator: {
+            //         filename: '[name][ext]'
+            //     }
+            // },
+            // {
+            //     test: /\.s[ac]ss$/i,
+            //     use: [
+            //         // Creates `style` nodes from JS strings
+            //         "style-loader",
+            //         // Translates CSS into CommonJS
+            //         "css-loader",
+            //         // Compiles Sass to CSS
+            //         "sass-loader",
+            //     ],
+            // },
+            // {
+            //     test: /\.(jpe?g|gif|png|svg)$/i,
+            //     loader: 'url-loader',
+            //     options: {
+            //         limit: 25000,
+            //     },
+            // }
         ]
     },
 };
