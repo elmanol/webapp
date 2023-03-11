@@ -302,3 +302,4 @@ thumb
 sketch
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm,react,django
+!/django_project/static/bundle.js
